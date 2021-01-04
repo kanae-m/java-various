@@ -1,16 +1,18 @@
 package com.example.delay;
 
+import com.example.util.PrintUtil;
+
 public class SingletonDelay {
 
     static {
-        System.out.println("SingletonDelay: static initializer");
+        PrintUtil.println("SingletonDelay: static initializer");
     }
 
     /**
      * コンストラクタ
      */
     private SingletonDelay() {
-        System.out.println("SingletonDelay: constructor");
+        PrintUtil.println("SingletonDelay: constructor");
     }
 
     /**
@@ -21,7 +23,7 @@ public class SingletonDelay {
      * @return {@code SingletonDelay}のインスタンス
      */
     public static SingletonDelay getInstance() {
-        System.out.println("SingletonDelay.getInstance");
+        PrintUtil.println("SingletonDelay.getInstance");
         return SingletonHolder.INSTANCE;
     }
 
@@ -37,7 +39,7 @@ public class SingletonDelay {
     private static class SingletonHolder {
 
         static {
-            System.out.println("SingletonHolder: static initializer");
+            PrintUtil.println("SingletonHolder: static initializer");
         }
 
         private static final SingletonDelay INSTANCE = new SingletonDelay();
@@ -48,7 +50,7 @@ public class SingletonDelay {
      * インスタンスを生成しなくても呼べるメソッド
      */
     public static void print() {
-        System.out.println("SingletonDelay: static method");
+        PrintUtil.println("SingletonDelay: static method");
     }
 
 }

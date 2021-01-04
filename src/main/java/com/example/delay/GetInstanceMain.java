@@ -1,21 +1,23 @@
 package com.example.delay;
 
+import com.example.util.PrintUtil;
+
 public class GetInstanceMain {
 
     public static void main(String[] args) {
-        System.out.println("*****Start: SingletonSimple.getInstance()****");
-        System.out.println("---first---");
-        System.out.println(SingletonSimple.getInstance());
-        System.out.println("---second---");
-        System.out.println(SingletonSimple.getInstance());
+        PrintUtil.println("*****Start: SingletonSimple.getInstance()****");
+        PrintUtil.println("---first---");
+        PrintUtil.println(SingletonSimple.getInstance());
+        PrintUtil.println("---second---");
+        PrintUtil.println(SingletonSimple.getInstance());
 
-        System.out.println();
+        PrintUtil.println();
 
-        System.out.println("*****Start: SingletonDelay.getInstance()****");
-        System.out.println("---first---");
-        System.out.println(SingletonDelay.getInstance());
-        System.out.println("---second---");
-        System.out.println(SingletonDelay.getInstance());
+        PrintUtil.println("*****Start: SingletonDelay.getInstance()****");
+        PrintUtil.println("---first---");
+        PrintUtil.println(SingletonDelay.getInstance());
+        PrintUtil.println("---second---");
+        PrintUtil.println(SingletonDelay.getInstance());
     }
 
 }

@@ -1,14 +1,16 @@
 package com.example.delay;
 
+import com.example.util.PrintUtil;
+
 public class PrintMain {
 
     public static void main(String[] args) {
-        System.out.println("---Start: SingletonSimple.print()---");
+        PrintUtil.println("---Start: SingletonSimple.print()---");
         SingletonSimple.print();
 
-        System.out.println();
+        PrintUtil.println();
 
-        System.out.println("---Start: SingletonDelay.print()---");
+        PrintUtil.println("---Start: SingletonDelay.print()---");
         SingletonDelay.print();
     }
 
